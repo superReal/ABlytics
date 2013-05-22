@@ -2,7 +2,7 @@
 A/B-Testing für HTML-Elemente protokolliert in Google Analytics
 
 
-**ABlytics** ist ein pflegeleichtes jQuery-Plugin für die Durchführung von A/B- und Multivariate-Tests. Die einzelnen Tests werden auf gewünschte Bereiche innerhalb einer Webseite angewendet, die Erstellung separater Seitenvariationen entfällt.
+**ABlytics** ist ein pflegeleichtes jQuery-Plugin für die Durchführung von A/B- und [Multivariate-Tests](http://de.wikipedia.org/wiki/Multivariate_Verfahren). Die einzelnen Tests werden auf gewünschte Bereiche innerhalb einer Webseite angewendet, die Erstellung separater Seitenvariationen entfällt.
 
 Die einzelnen Test-Szenarien werden als Parameter an die Plugin-Funktion übergeben: Zusätzlich zum abweichenden Namen der Test-Variation übernimmt die jeweilige Callback-Funktion die Steuerung und das Verhalten des Tests (z.B. ein- oder ausblenden der Bereiche). Übersichtlich und verständlich.
 
@@ -65,14 +65,15 @@ Die Zusammenfassung und Auswertung des Testings befindet sich in Google Analytic
 </script>
 ```
 
-**Parameter**
+### Parameter
 - ```name``` - Test-Name, welcher in Google Analytics als Ereigniskategorie dient
-- ```expires``` - Lebensdauer des Tests bzw. des Browser-Cookies
+- ```expires``` - Lebensdauer des Tests bzw. des Browser-Cookies in Tagen
 - ```variants``` - einzelne Test-Varianten
 - ```variants``` ```name``` - Varianten-Name bzw. Ereignis
 - ```variants``` ```callback``` - Funktion, die bei jeweiliger Test-Variante ausgelöst wird
 
-**Erläuterung**
+
+### Erläuterung
 Oben vorgestellte Plugin-Einbindung zählt Seitenbesucher, die den Crossselling-Bereich gesehen oder eben nicht gesehen haben. Nach dem gleichen Prinzip kann mit Farben, Größen, Bildern, Call2Action gearbeitet werden, um herauszufinden, welche Layout-Änderungen zu welcher Konversionrate geführt haben.
 
 
@@ -87,3 +88,10 @@ Unterstützt werden alle Browser bis auf Internet Explorer <= 8.
 ### Changelog
 
 - Version: 1.0 geht online
+
+
+### Screenshot
+
+Auflistung der Test-Varianten als Ereignisaktion
+
+![Google Analytics > Ereignisse > Ereignisaktion](screenshot-1.png "Google Analytics")
