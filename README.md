@@ -93,5 +93,6 @@ Unterstützt werden alle Browser bis auf Internet Explorer <= 8.
 ### Screenshot
 
 Auflistung der Test-Varianten als Ereignisaktion
-
-![Google Analytics > Ereignisse > Ereignisaktion](screenshot-1.png "Google Analytics")
+<p>
+	<img src="https://github.com/superReal/ABlytics/raw/master/screenshot-1.png" width="1154" height="660" alt="Google Analytics"/>
+</p>
