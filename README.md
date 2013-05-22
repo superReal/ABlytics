@@ -94,5 +94,5 @@ Unterstützt werden alle Browser bis auf Internet Explorer <= 8.
 
 Auflistung der Test-Varianten als Ereignisaktion
 <p>
-	<img src="https://github.com/superReal/ABlytics/raw/master/screenshot-1.png" width="1154" height="660" alt="Google Analytics"/>
+	<img src="https://github.com/superReal/ABlytics/raw/master/screenshot-1.png" style="width:1154px !important; height: 660px !important" alt="Google Analytics"/>
 </p>
