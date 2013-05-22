@@ -88,11 +88,3 @@ Unterstützt werden alle Browser bis auf Internet Explorer <= 8.
 ### Changelog
 
 - Version: 1.0 geht online
-
-
-### Screenshot
-
-Auflistung der Test-Varianten als Ereignisaktion
-<p>
-	<img src="https://github.com/superReal/ABlytics/raw/master/screenshot-1.png" style="width:1154px !important; height: 660px !important" alt="Google Analytics"/>
-</p>
