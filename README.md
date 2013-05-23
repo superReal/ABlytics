@@ -82,7 +82,7 @@ Unterstützt werden alle Browser bis auf Internet Explorer <= 8.
 
 
 ### Development
-[Sergej Müller](https://gist.github.com/sergejmueller) / [superReal](http://superreal.de)
+[Sergej Müller](https://github.com/sergejmueller) / [superReal](http://superreal.de)
 
 
 ### Changelog
