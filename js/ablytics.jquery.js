@@ -3,6 +3,7 @@
  *  Description: A/B tests for any html element with Google Analytics event tracking.
  *  Notices: Check tracking events on GA > Content > Event Tracking
  *  Author: Sergej Müller / superreal.de
+ *  Version: 1.0.1
  *  License: GPL v2
  */
 
@@ -97,7 +98,10 @@
 					[
 						'_trackEvent',
 						options['name'],
-						variant['name']
+						variant['name'],
+						'',
+						0,
+						true
 					]
 				);
 

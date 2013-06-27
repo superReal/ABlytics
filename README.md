@@ -87,4 +87,7 @@ Unterstützt werden alle Browser bis auf Internet Explorer <= 8.
 
 ### Changelog
 
-- Version: 1.0 geht online
+- Version: 1.0.1
+```non-interaction``` zu ```_trackEvent``` hinzugefügt
+
+- Version: 1.0.0 geht online
