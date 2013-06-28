@@ -25,6 +25,12 @@
 		if ( jQuery.isEmptyObject(options) || typeof (_gaq) === 'undefined' ) {
 			return;
 		}
+		
+		
+		/* Non-Interaction setting */
+		if ( typeof (options.non_interaction) !== 'boolean' ) {
+			options.non_interaction = false;
+		}
 
 
 		/* Random variant */
@@ -69,7 +75,8 @@
 					variant = null,
 					variants = options.variants,
 					event_id = '',
-					variant_id = '';
+					variant_id = '',
+					non_interaction = options.non_interaction;
 
 				/* Event name */
 				event_id = cookie.prefix + obj.attr('id');
@@ -101,7 +108,7 @@
 						variant['name'],
 						'',
 						0,
-						true
+						non_interaction
 					]
 				);
 
