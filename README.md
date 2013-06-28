@@ -66,9 +66,10 @@ Die Zusammenfassung und Auswertung des Testings befindet sich in Google Analytic
 ```
 
 ### Parameter
-- ```name``` - Test-Name, welcher in Google Analytics als Ereigniskategorie dient
-- ```expires``` - Lebensdauer des Tests bzw. des Browser-Cookies in Tagen
-- ```variants``` - einzelne Test-Varianten
+- ```name``` - Test-Name, welcher in Google Analytics als Ereigniskategorie dient [optional]
+- ```expires``` - Lebensdauer des Tests bzw. des Browser-Cookies in Tagen [optional, _31_ als Standard]
+- ```nonInteraction``` - Auf _true_ gesetzt, wird der Event bei der Ermittlung der Bounce-Rate nicht berücksichtigt [optional, _false_ als Standard]
+- ```variants``` - einzelne Test-Varianten [erforderlich]
 - ```variants``` ```name``` - Varianten-Name bzw. Ereignis
 - ```variants``` ```callback``` - Funktion, die bei jeweiliger Test-Variante ausgelöst wird
 
@@ -86,6 +87,9 @@ Unterstützt werden alle Browser bis auf Internet Explorer <= 8.
 
 
 ### Changelog
+
+###### Version: 1.0.2
+Parameter ```non-interaction``` als Option beim Aufruf der ABlytics-Funktion
 
 ###### Version: 1.0.1
 Parameter ```non-interaction``` zum Funktionsaufruf ```_trackEvent``` hinzugefügt

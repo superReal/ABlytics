@@ -3,7 +3,7 @@
  *  Description: A/B tests for any html element with Google Analytics event tracking.
  *  Notices: Check tracking events on GA > Content > Event Tracking
  *  Author: Sergej Müller / superreal.de
- *  Version: 1.0.1
+ *  Version: 1.0.2
  *  License: GPL v2
  */
 
@@ -13,16 +13,26 @@
 
 	/* Core */
 	$.fn.ablytics = function(options) {
-
-
 		/* < IE9 shit */
 		if ( ! $.support.leadingWhitespace ) {
 			return;
 		}
 
 
+		/* Settings */
+		var settings = $.extend(
+			{
+				'name': 'New A/B Test',
+				'expires': 31,
+				'variants': {},
+				'nonInteraction': false
+			},
+			options
+		);
+
+
 		/* No variants */
-		if ( jQuery.isEmptyObject(options) || typeof (_gaq) === 'undefined' ) {
+		if ( jQuery.isEmptyObject(settings.variants) || typeof (_gaq) === 'undefined' ) {
 			return;
 		}
 
@@ -53,7 +63,7 @@
 				var date = new Date();
 
 				/* Set expires */
-				date.setTime( + date + options.expires * 86400000);
+				date.setTime( + date + settings.expires * 86400000);
 
 				/* Set cookie */
 				document.cookie = key + '=' + value + '; expires=' + date.toGMTString() + '; path=/';
@@ -67,7 +77,7 @@
 				/* Init */
 				var obj = $(this),
 					variant = null,
-					variants = options.variants,
+					variants = settings.variants,
 					event_id = '',
 					variant_id = '';
 
@@ -97,11 +107,11 @@
 				_gaq.push(
 					[
 						'_trackEvent',
-						options['name'],
-						variant['name'],
+						settings.name,
+						variant.name,
 						'',
 						0,
-						true
+						settings.nonInteraction
 					]
 				);
 
